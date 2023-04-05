@@ -31,7 +31,7 @@ public class ORDSApiWithJsonPath extends HRTestBase {
 
         //get all country names where their region id is equal to 2
         List<String> countryNameWithRegionId2 = jsonPath.getList("items.findAll {it.region_id==3}.country_name");
-        System.out.println(countryNameWithRegionId2);
+        System.out.println(countryNameWithRegionId2);                    //if statement                   value
     }
 
     @DisplayName("GET requesto /employees with query param")
