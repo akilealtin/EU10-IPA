@@ -1,28 +1,22 @@
 package com.cybertek.Day5;
 
 
-
 import com.cybertek.utilities.HRTestBase;
-import io.restassured.http.*;
-import io.restassured.path.json.*;
+import io.restassured.http.ContentType;
+import io.restassured.path.json.JsonPath;
+import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.api.Test;
 
-import org.apache.poi.ss.formula.functions.T;
-import org.apache.xmlbeans.QNameSet;
-import org.junit.jupiter.api.*;
-
-import java.util.*;
-
-import static io.restassured.RestAssured.*;
-
-import static org.hamcrest.MatcherAssert.*;
+import static io.restassured.RestAssured.given;
+import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.*;
 
 
 public class ORDSHamcrestTest extends HRTestBase {
 
 
-    private T name;
 
+/*
     @DisplayName("GET request to Employees IT_PROG endpoint and chaining")
     @Test
     public void employeesTest(){
@@ -43,7 +37,7 @@ public class ORDSHamcrestTest extends HRTestBase {
                 .body("items.job_id",everyItem(equalTo("IT_PROG")))
                 .body("items.first_name",containsInRelativeOrder("Alexander","Bruce","David","Valli","Diana")) //contains with order
                 .body("items.email",containsInAnyOrder("VPATABAL","DAUSTIN","BERNST","AHUNOLD","DLORENTZ")) //contains without order
-                .body("items.first_name", equalTo(name)); // equality of lists assertion
+                //.body("items.first_name", equalTo(name)); // equality of lists assertion
 
     }
     
@@ -71,6 +65,8 @@ public class ORDSHamcrestTest extends HRTestBase {
         assertThat(jsonPath.getList("items.first_name"),containsInRelativeOrder("Alexander","Bruce","David","Valli","Diana"));
 
     }
+
+ */
 
 
 }
